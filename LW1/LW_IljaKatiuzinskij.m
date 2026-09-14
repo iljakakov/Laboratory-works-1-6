@@ -1,10 +1,6 @@
 % Ilja Katiuzinskij
 
 %%
-help sin
-doc plot
-doc title
-
 x=1:32;
 y=x.^2;
 plot (x,y,'o-r',x, y/3, 'xb')
@@ -21,4 +17,5 @@ A = [N N+1 N+2;
 a=A(3,2);
 b= A(2:3, 1:2);
 c=A([1 3],[1 3]);
-B= [ A v(1:3)']
+v2= v(1:3)';
+B= [A v2];
