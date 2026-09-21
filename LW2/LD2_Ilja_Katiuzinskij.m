@@ -40,7 +40,7 @@ maziausias= min (s_filt);
 %%Papildoma uzduotis
 A= input('Iveskite vektoriu A: ');
 B= A(2:2:end);
-C= A(end:-1:-2:-1);
+C= A(end-1:-2:1);
 
 disp('vektorius B yra: ')
 disp(B)
