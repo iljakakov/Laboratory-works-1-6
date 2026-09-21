@@ -11,4 +11,24 @@ Cm1= pi/2 : pi/2 : 3*pi/2;
 Cm2= -1:1;
 Cm3= -3:-1:-5;
 C= [Cm1; Cm2; Cm3];
-el_suma= sum(c, 2);
+el_suma= sum(C, 2);
+
+%%3
+A= 4.5;
+f= 6;
+sigma= 1;
+U1= 3;
+U2= 1.5;
+
+t= 0:0.001:1.5;
+s=A* cos(2*pi*f*t);
+n=sigma*randn(size(t));
+s= s+n;
+
+s_U1= s(s>U1);
+
+s_filt=s;
+s_filt(abs(s_filt)< U2) = 0;
+
+nefilt
+
