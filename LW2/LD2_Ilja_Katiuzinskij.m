@@ -37,3 +37,15 @@ antrinktu_dydis = size (s_U1);
 didziausias= max (s_filt);
 maziausias= min (s_filt);
 
+%%Papildoma uzduotis
+A= input('Iveskite vektoriu A: ');
+B= A(2:2:end);
+C= A(end:-1:-2:-1);
+
+disp('vektorius B yra: ')
+disp(B)
+
+disp ('vektorius C yra: ')
+disp(C)
+
+
