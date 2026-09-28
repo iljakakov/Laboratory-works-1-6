@@ -27,3 +27,16 @@ xlabel ('x')
 ylabel ('f(x)')
 legend ('2sin(x)cos(x)', '3sin(x)cos(x)')
 grid on
+
+%%2
+t= 0:pi/20:4*pi;
+x=sin(t);
+y=cos(t);
+z=tan(t);
+figure
+plot3(x,y,z,'o')
+xlabel('x(t)')
+ylabel('y(t)')
+zlabel('z(t)')
+title('3D grafikas')
+grid on 

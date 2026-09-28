@@ -16,6 +16,27 @@ grid on
 
 %%b
 figure 
-y1=2*sin(x).*cos(x);
-y2=3*sina(x).*cos(x);
-plot z
+y1= 2*sin(x).*cos(x);
+y2= 3*sin(x).*cos(x);
+plot (x,y1,'LineWidth',5)
+hold on 
+plot (x,y2, 'LineWidth',5)
+hold off
+title ('Funkciju grafikai')
+xlabel ('x')
+ylabel ('f(x)')
+legend ('2sin(x)cos(x)', '3sin(x)cos(x)')
+grid on
+
+%%2
+t= 0:pi/20:4*pi;
+x=sin(t);
+y=cos(t);
+z=tan(t);
+figure
+plot3(x,y,z,'o')
+xlabel('x(t)')
+ylabel('y(t)')
+zlabel('z(t)')
+title('3D grafikas')
+grid on 
