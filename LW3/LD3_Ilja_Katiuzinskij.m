@@ -40,3 +40,15 @@ ylabel('y(t)')
 zlabel('z(t)')
 title('3D grafikas')
 grid on 
+
+%%Papildoma uzduotis
+figure 
+%a
+subplot (2,1,1)
+plot (t,s, '-. ', 'LineWidth',2)
+hold on 
+plot (t,s_filt,'-', 'LineWidth',2)
+yline(U1, 'y-','LineWidth',2)
+yline(-U1, 'y-','LineWidth',2)
+yline(U2, 'y-','LineWidth',2)
+yline (-U2, 'y-','LineWidth',2)
