@@ -16,5 +16,14 @@ grid on
 
 %%b
 figure 
-y1=2*sin(x).*cos(x);
-y2=3*sina(x).*cos(x);
+y1= 2*sin(x).*cos(x);
+y2= 3*sin(x).*cos(x);
+plot (x,y1,'LineWidth',5)
+hold on 
+plot (x,y2, 'LineWidth',5)
+hold off
+title ('Funkciju grafikai')
+xlabel ('x')
+ylabel ('f(x)')
+legend ('2sin(x)cos(x)', '3sin(x)cos(x)')
+grid on
