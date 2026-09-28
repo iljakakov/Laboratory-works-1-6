@@ -24,16 +24,11 @@ t= 0:0.001:1.5;
 s=A* cos(2*pi*f*t);
 n=sigma*randn(size(t));
 s= s+n;
-
 s_U1= s(s>U1);
-
 s_filt=s;
 s_filt(abs(s_filt)< U2) = 0;
-
 nefilt_dydis = size (s);
-
 antrinktu_dydis = size (s_U1);
-
 didziausias= max (s_filt);
 maziausias= min (s_filt);
 
