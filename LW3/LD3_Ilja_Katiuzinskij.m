@@ -13,3 +13,8 @@ title ('f(x) = sin(x)')
 xlabel('x')
 ylabel('f(x)')
 grid on 
+
+%%b
+figure 
+y1=2*sin(x).*cos(x);
+y2=3*sina(x).*cos(x);
