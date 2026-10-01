@@ -40,3 +40,30 @@ ylabel('y(t)')
 zlabel('z(t)')
 title('3D grafikas')
 grid on 
+
+%%Papildoma uzduotis
+figure 
+%a
+subplot (2,1,1)
+plot (t,s, '-. ', 'LineWidth',2)
+hold on 
+plot (t,s_filt,'-', 'LineWidth',2)
+yline(U1, 'y-','LineWidth',2)
+yline(-U1, 'y-','LineWidth',2)
+yline(U2, 'y-','LineWidth',2)
+yline (-U2, 'y-','LineWidth',2)
+title('Pradinis ir filtruota signalai','Color','m','FontSize',14)
+xlabel('Laikas, s')
+ylabel('Itampa, V')
+legend('Pradinis signalas','Filtruotas signalas','U1','-U1','U2','-U2')
+grid on
+
+%b
+subplot(2,1,2)
+ind = find(s>U1);
+stem(t(ind),s(ind))
+hold on
+[d did_ind]= max(s);
+[m maz_ind]= min (s);
+plot (t(did_ind),d,'gs','MarkerSize',9)
+plot(t(maz_ind),m,'gs')
