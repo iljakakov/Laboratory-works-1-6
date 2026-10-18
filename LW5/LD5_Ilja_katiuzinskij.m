@@ -58,4 +58,3 @@ disp('Sakinys be papildomu tarpu:')
 disp(naujas)
 disp('Zodziu skaicius:')
 disp(zodziu_skaicius)
-.
