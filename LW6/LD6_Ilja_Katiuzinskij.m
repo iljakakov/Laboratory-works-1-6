@@ -1,51 +1,37 @@
 %% Ilja Katiuzinskij 2026-10-15 var.6
 
-%%1
-A = atsitiktiniai(3,4,10)
+%% 1
+A = atsitiktiniai(3, 4, 10);
+disp('Sugeneruotas masyvas:')
+disp(A)
+disp('Funkcijos aprasymas:')
+help atsitiktiniai
 
 %% 2
 global x y
 x = 2*pi:-0.1:-2*pi;
 y = zeros(size(x));
-nenulinis_dalis
-nulinis_dalis
+funkcija1
+funkcija2
 figure
-plot(x,y,'--y*')
+plot(x,y,'y--*')
 title('y(x) = sin(x)/x')
-xlabel('x'); ylabel('y'); grid on
+xlabel('x')
+ylabel('y(x)')
+grid on
 whos global
 
+%% Papildoma uzduotis
+a = vienasdu(pi/3);
 
-%% Papildoma
-a = vienasdu(pi/3)
-[s,c] = vienasdu(pi/3)
-%% Funkcijos 
-function A = atsitiktiniai(eil, stulp, N)
-A = randi(N, eil, stulp);
-end
+disp('Vienas rezultatas:')
+disp(a)
 
-function nenulinis_dalis
-global x y
-idx = (x ~= 0);
-y(idx) = sin(x(idx)) ./ x(idx);
-end
+[s,c] = vienasdu(pi/3);
 
-function nulinis_dalis
-global x y
-y(x == 0) = 1;
-end
+disp('Du rezultatai:')
+disp(s)
+disp(c)
 
-function varargout = vienasdu(varargin)
-if nargin ~= 1
-    error('Reikia vieno argumento.');
-end
-v = varargin{1};
-if nargout <= 1
-    varargout{1} = cos(v);
-elseif nargout == 2
-    varargout{1} = sin(v);
-    varargout{2} = cos(v);
-else
-    error('Daugiausia galima grazinti du kintamuosius.');
-end
-end
+disp('Funkcijos aprasymas:')
+help vienasdu

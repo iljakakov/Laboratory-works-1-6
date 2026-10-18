@@ -1,4 +1,5 @@
 %% Ilja Katiuzinskij 2026-10-16 var.6
+
 %% 1
 % a
 kursai.EUR.pirkimas = 1.00;
