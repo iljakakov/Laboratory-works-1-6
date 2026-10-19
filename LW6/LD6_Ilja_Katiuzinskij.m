@@ -23,15 +23,11 @@ whos global
 
 %% Papildoma uzduotis
 a = vienasdu(pi/3);
-
 disp('Vienas rezultatas:')
 disp(a)
-
 [s,c] = vienasdu(pi/3);
-
 disp('Du rezultatai:')
 disp(s)
 disp(c)
-
 disp('Funkcijos aprasymas:')
 help vienasdu
