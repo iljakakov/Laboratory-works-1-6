@@ -26,7 +26,6 @@ disp(kursai.PLN)
 A = round(10 * rand + 1);
 spejimas = input('Spekite skaiciu: ');
 while spejimas ~= A
-
     if spejimas < A
         disp('Skaicius per mazas')
     else
